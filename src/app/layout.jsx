@@ -3,6 +3,7 @@ import "../style/globals.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "@/components/Footer/Footer.jsx";
+import Header from "@/components/Header/Header.jsx";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className="flex flex-col h-screen">
-        <Navigation />
+        <Header/>
         <div className="flex-1">{children}</div>
         <Footer />
         <ToastContainer position="bottom-right" />
